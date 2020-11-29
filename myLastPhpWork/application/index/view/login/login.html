@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+{include file="./public/common/top.html"/}
+<br><br>
+<center>
+	<form action="{:url('login/dologin')}" method="post" name=f>
+		<table style="width:480px; border-width:3px; border-style:dotted;">
+			<tr>
+				<td colspan=2 style="text-align:center;height:60px;font-size:20px">请登录LOL网上商城</td>
+			</tr>
+			<tr>
+				<td style="text-align:right;height:30px;font-size:20px">E-mail地址：</td>
+				<td align=left><input type=text name="email" value="a@163.com"></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;height:30px;font-size:20px">密码：</td>
+				<td align=left><input type=password name="passw"></td>
+			</tr>
+			<tr>
+				<td colspan=2 style="text-align:center;height:60px;">
+					<input type=submit name=s value="登录" style="width:20%;height:50%">&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="{:url('register/register')}" style="font-size:20px" >注册</a>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>
